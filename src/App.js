@@ -1,27 +1,17 @@
 import React from 'react'
-import ErrorBrondarieshero from './DAY7/ErrorBrondarieshero'
-import Hero from './DAY7/Hero'
-import TryCatch from './DAY7/TryCatch'
-// import List from './DAY6/List'
-// import ListProps from './DAY6/ListProps'
-// import ListKeys from './DAY6/ListKeys'
-// import ListObject from './DAY6/ListObject'
-// import FloatingActionButtons from './MATRIAL UI/DemoUi'
+import GetAxios from './DAY9/GetAxios'
+import PostAxios from './DAY9/PostAxios'
+import PutAxios from './DAY9/PutAxios'
+import DeleteAxios from './DAY9/DeleteAxios'
+
 export default function App() {
   return (
     <div>
-     {/* <List/>
-     <ListProps/>
-     <ListKeys/>
-     <ListObject/>
-     <FloatingActionButtons/> */}
-     <ErrorBrondarieshero>
-      <Hero heroName = "IYER"></Hero>
-     </ErrorBrondarieshero>
-     <ErrorBrondarieshero>
-      <Hero heroName = "GILL"></Hero>
-     </ErrorBrondarieshero>
-     <TryCatch player="SKY"/>
+      <GetAxios/>
+      <PostAxios/>
+      <PutAxios/>
+      <DeleteAxios/>
     </div>
   )
 }
+

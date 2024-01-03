@@ -1,16 +1,14 @@
 import React from 'react'
-import GetAxios from './DAY9/GetAxios'
-import PostAxios from './DAY9/PostAxios'
-import PutAxios from './DAY9/PutAxios'
-import DeleteAxios from './DAY9/DeleteAxios'
+import { Provider } from 'react-redux'
+import store from './THUNK/store'
+import CounterComponent from './THUNK/CounterComponent'
 
 export default function App() {
   return (
     <div>
-      <GetAxios/>
-      <PostAxios/>
-      <PutAxios/>
-      <DeleteAxios/>
+      <Provider store={store}>
+        <CounterComponent/>
+      </Provider>
     </div>
   )
 }
